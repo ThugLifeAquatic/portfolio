@@ -1,0 +1,37 @@
+* {
+
+}
+
+nav {
+  float:right;
+}
+
+nav ul {
+  display:none;
+}
+
+nav i.fa.fa-navicon {
+  float: right;
+}
+
+@media (min-width: 1000px) {
+  nav ul {
+    display:block;
+  }
+
+  nav i.fa.fa-navicon{
+    display:none;
+  }
+}
+
+nav:hover ul{
+  display:block;
+}
+
+img {
+  max-width: 100%;
+}
+
+#skills{
+  text-align: center;
+}
