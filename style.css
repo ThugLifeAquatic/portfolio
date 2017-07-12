@@ -1,13 +1,39 @@
+/*BASE----------------------------------------------------------*/
 * {
+  /*border: 1px dashed orange;*/
+}
+body {
+  text-align: center;
+  background-color: #fff;
+}
 
+a {
+  text-decoration: none;
+}
+
+h3 {
+  text-align: left;
+}
+/*LAYOUT--------------------------------------------------------*/
+header {
+  text-align: left;
 }
 
 nav {
-  float:right;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
 }
+/*MODULES-------------------------------------------------------*/
 
 nav ul {
   display:none;
+}
+
+nav li {
+  display: inline;
+  margin-right: 2%;
+  margin-right: 2%;
 }
 
 nav i.fa.fa-navicon {
@@ -32,6 +58,6 @@ img {
   max-width: 100%;
 }
 
-#skills{
-  text-align: center;
+.template{
+  display:none;
 }
