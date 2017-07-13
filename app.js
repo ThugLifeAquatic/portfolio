@@ -1,10 +1,10 @@
 'use strict';
 
-function ProjectModel(name, description, image, link ){
+function ProjectModel(name, description, image, link) {
   this.name = name;
   this.description = description;
   this.image = image;
-  this.link =link;
+  this.link = link;
   ProjectModel.all.push(this);
 }
 
@@ -18,13 +18,27 @@ ProjectModel.prototype.toHtml = function() {
   var $newArticle = $('.template').clone();
   $newArticle.removeClass('template');
   $newArticle.find('h4').html(this.name);
-  $newArticle.find('img').attr('src',this.image);
+  $newArticle.find('img').attr('src', this.image);
   $newArticle.find('p').html(this.description);
   $newArticle.find('section').html(this.body);
-  $newArticle.find('a').attr('href',this.link);
+  $newArticle.find('a').attr('href', this.link);
   return $newArticle;
 };
 
+function hideSections() {
+  $('#main').siblings().hide();
+}
+
+function navBar() {
+  $('nav').on('click', 'li', function() {
+    hideSections();
+    $('#' + $(this).children('a').html()).fadeIn('slow');
+  })
+}
+
 ProjectModel.all.forEach(function(project) {
-  $('#my-projects .row').append(project.toHtml());
+  $('#Projects .row').append(project.toHtml());
 });
+
+hideSections();
+navBar();

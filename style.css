@@ -37,7 +37,7 @@ nav li {
 }
 
 nav i.fa.fa-navicon {
-  float: right;
+  font-size: 200%;
 }
 
 @media (min-width: 1000px) {
@@ -50,7 +50,7 @@ nav i.fa.fa-navicon {
   }
 }
 
-nav:hover ul{
+nav:focus ul{
   display:block;
 }
 
