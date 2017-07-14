@@ -15,14 +15,16 @@ new ProjectModel('Noah\'s Ark', 'A party boat for nature.', 'ark.jpg', 'https://
 new ProjectModel('Millenium Falcon', 'A super fast spaceship thats ideal for smuggling.', 'falcon.jpg', 'https://en.wikipedia.org/wiki/Millenium_Falcon');
 
 ProjectModel.prototype.toHtml = function() {
-  var $newArticle = $('.template').clone();
-  $newArticle.removeClass('template');
-  $newArticle.find('h4').html(this.name);
-  $newArticle.find('img').attr('src', this.image);
-  $newArticle.find('p').html(this.description);
-  $newArticle.find('section').html(this.body);
-  $newArticle.find('a').attr('href', this.link);
-  return $newArticle;
+  var templateScript = $('#address-template').html();
+  var compTemp = Handlebars.compile(templateScript);
+  var context = {
+    'name': this.name,
+    'description': this.description,
+    'image': this.image,
+    'link': this.link
+  }
+  var compiled = compTemp(context);
+  return compiled;
 };
 
 function hideSections() {
@@ -31,9 +33,17 @@ function hideSections() {
 
 function navBar() {
   $('nav').on('click', 'li', function() {
-    hideSections();
-    $('#' + $(this).children('a').html()).fadeIn('slow');
-  })
+    this.clicked;
+    if (this.clicked === true) {
+      $('#' + $(this).children('a').html()).fadeOut('slow');
+      console.log('Hide!');
+      this.clicked = false;
+    } else {
+      console.log('click!');
+      $('#' + $(this).children('a').html()).fadeIn('slow');
+      this.clicked = true;
+    }
+  });
 }
 
 ProjectModel.all.forEach(function(project) {
