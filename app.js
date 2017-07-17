@@ -35,12 +35,12 @@ function navBar() {
   $('nav').on('click', 'li', function() {
     this.clicked;
     if (this.clicked === true) {
-      $('#' + $(this).children('a').html()).fadeOut('slow');
+      $('#' + $(this).children('a').html()).slideUp(1500).focus();
       console.log('Hide!');
       this.clicked = false;
     } else {
       console.log('click!');
-      $('#' + $(this).children('a').html()).fadeIn('slow');
+      $('#' + $(this).children('a').html()).slideDown(1500).focus();
       this.clicked = true;
     }
   });
