@@ -57,9 +57,9 @@ nav i.fa.fa-navicon {
   nav i.fa.fa-navicon {
     display: none;
   }
-  #Projects hr + div{
+  /*#Projects hr + div{
     margin-left: 13%;
-  }
+  }*/
 }
 
 nav:hover ul {

@@ -13,22 +13,4 @@
 	"description": "A super fast spaceship thats ideal for smuggling.",
 	"image": "falcon.jpg",
 	"link": "https://en.wikipedia.org/wiki/Millenium_Falcon"
-}, {
-	"category": "art",
-	"name": "The Creation of T-Rex",
-	"description": "And God said \"Let there be T-Rex\".",
-	"image": "https://ih0.redbubble.net/image.263673671.9704/flat,1000x1000,075,f.jpg",
-	"link": "https://www.redbubble.com/people/adjusted"
-}, {
-	"category": "art",
-	"name": "Secret Weapon",
-	"description": "The Empire's new groove.",
-	"image": "https://ih1.redbubble.net/image.202307245.8949/flat,1000x1000,075,f.jpg",
-	"link": "https://www.redbubble.com/people/adjusted"
-}, {
-	"category": "art",
-	"name": "The Amazing Spideraptor",
-	"description": "Your friendly neighborhood mash-up.",
-	"image": "https://ih0.redbubble.net/image.202305717.9965/flat,1000x1000,075,f.jpg",
-	"link": "https://www.redbubble.com/people/adjusted"
 }]
