@@ -29,13 +29,16 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
+  <!-- Handlbars.js Template
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script id="address-template" type="text/x-handlebars-template">
-    <div class="template three columns">
+    {{#each project}}
+    <div class="three columns">
       <h4>{{name}}</h4>
       <a href="{{link}}"><img src="{{image}}" alt=""></a>
       <p>{{description}}</p>
     </div>
-    </div>
+    {{/each}}
   </script>
 
 </head>
@@ -113,9 +116,10 @@
     </div>
   </div>
   <div class="container" id="Projects">
-    <div class="row">
-      <h3>My Projects</h3>
-      <hr>
+    <h3>My Projects</h3>
+    <h4>Web</h4>
+    <hr>
+    <div class="row" id="web">
     </div>
   </div>
   <footer>

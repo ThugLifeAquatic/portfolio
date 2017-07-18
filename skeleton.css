@@ -58,9 +58,9 @@
   .column:first-child,
   .columns:first-child {
     margin-left: 13%; }
-    #Projects .columns:nth-child(3) {
+    /*#Projects .columns:nth-child(4) {
       margin-left: 13%;
-    }
+    }*/
     #Skills .columns:nth-child(3) {
       margin-left: 13%
     }
