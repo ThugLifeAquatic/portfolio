@@ -1,4 +1,5 @@
 'use strict';
+//katherine says: clean up all the unused code!
 
 // function ProjectModel(name, description, image, link, cat) {
 //   this.category = cat;
