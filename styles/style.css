@@ -81,16 +81,17 @@ nav:hover ul {
 
 #main .columns {
   padding: .5%;
+  background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 1px 1px 2px rgba(136, 136, 136, 0.71);
   margin-bottom: 4%;
 }
 
 #Skills h4 {
-  background-color: rgba(138, 138, 138, 0.22);
+  background-color: rgba(138, 138, 138, 0.3);
 }
 
 #Skills .columns {
-  background-color: rgba(255, 255, 255, 0.42);
+  background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 1px 1px 2px rgba(136, 136, 136, 0.71);
   margin-bottom: 4%;
 }
@@ -105,6 +106,12 @@ nav:hover ul {
 
 #Projects h4 {
   height: 60px
+  /*background-color: rgba(255, 255, 255, 0.8);*/
+  /*box-shadow: 1px 1px 2px rgba(136, 136, 136, 0.71);*/
+}
+
+#statData {
+  margin-bottom: 4%;
 }
 
 svg {
