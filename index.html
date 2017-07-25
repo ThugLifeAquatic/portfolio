@@ -6,7 +6,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Your page title here :)</title>
+  <title>Austin Cohrs</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -27,9 +27,9 @@
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/png" href="images/TurtleBird_Logo.png">
 
-  <!-- Handlbars.js Template
+  <!-- Handlbars.js Templates
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script id="address-template" type="text/x-handlebars-template">
     {{#each project}}
@@ -39,6 +39,21 @@
       <p>{{description}}</p>
     </div>
     {{/each}}
+  </script>
+
+  <script id="stats-template" type="text/x-handlebars-template">
+    <div class="three columns">
+      <h4>Total Projects</h4>
+      <h2>{{numProjects}}</h2>
+    </div>
+    <div class="three columns">
+      <h4>Average Files</h4>
+      <h2>{{avgFiles}}</h2>
+    </div>
+    <div class="three columns">
+      <h4>Total Files</h4>
+      <h2>{{allFiles}}</h2>
+    </div>
   </script>
 
 </head>
@@ -117,9 +132,17 @@
   </div>
   <div class="container" id="Projects">
     <h3>My Projects</h3>
+    <h4>Stats</h4>
+    <hr>
+    <div class="row" id="statData">
+    </div>
     <h4>Web</h4>
     <hr>
     <div class="row" id="web">
+    </div>
+    <h4>Graphics</h4>
+    <hr>
+    <div class="row" id="art">
     </div>
   </div>
   <footer>
