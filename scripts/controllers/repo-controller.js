@@ -1,8 +1,9 @@
 'use strict';
 
 (function(module) {
-  const projectController = {};
-  projectController.index = function() {
+  const repoController = {};
+  repos.requestRepos(repos.index)
+  repoController.index = function() {
     // SCROLL CODE TAKEN FROM:
     // https://stackoverflow.com/questions/2905867/how-to-scroll-to-specific-item-using-jquery
     $('#Repos').show();
@@ -16,5 +17,5 @@
     container.animate(1000);
   };
 
-  module.projectController = projectController;
+  module.repoController = repoController;
 })(window);

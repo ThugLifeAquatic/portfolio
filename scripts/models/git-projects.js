@@ -10,21 +10,22 @@
     //       client side of our app, our new proxyGitHub function will be handling the token using our
     //       new environment variable!
     $.get('/github/user/repos')
-    .then(data => repos.all = data, err => console.error(err)) // es6 syntax arrow functions
-    .then(callback);
+      .then(data => repos.all = data, err => console.error(err)) // es6 syntax arrow functions
+      .then(callback);
   };
 
+
+  // RENDERING
   repos.with = attr => repos.all.filter(repo => repo[attr]);
 
-// RENDERING
-$('#Repos').hide();
-  const render = Handlebars.compile($('#repo-template').text());
-
   repos.index = function() {
+    $('#Repos').hide();
+    const render = Handlebars.compile($('#repo-template').text());
     $('#Repos').append(
       repos.with('name').map(render)
     );
   };
+
 
   module.repos = repos;
 })(window);
