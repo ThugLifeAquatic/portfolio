@@ -70,8 +70,8 @@
       <nav>
         <i class="fa fa-navicon"></i>
         <ul>
-          <li><a href="#Skills">Skills</a></li>
-          <li><a href="#Projects">Projects</a></li>
+          <li><a href="/skills">Skills</a></li>
+          <li><a href="/projects">Projects</a></li>
           <li><a href="#">Dev Blog</a></li>
           <li><a target="_blank" href="https://github.com/ThugLifeAquatic">Github</a></li>
         </ul>
@@ -132,10 +132,6 @@
   </div>
   <div class="container" id="Projects">
     <h3>My Projects</h3>
-    <h4>Stats</h4>
-    <hr>
-    <div class="row" id="statData">
-    </div>
     <h4>Web</h4>
     <hr>
     <div class="row" id="web">
@@ -144,16 +140,32 @@
     <hr>
     <div class="row" id="art">
     </div>
+    <h4>Stats</h4>
+    <hr>
+    <div class="row" id="statData">
+    </div>
   </div>
   <footer>
-
+    <nav>
+      <i class="fa fa-navicon"></i>
+      <ul>
+        <li><a href="/up">Top</a></li>
+        <li><a href="">Dev Blog</a></li>
+        <li><a target="_blank" href="https://github.com/ThugLifeAquatic">Github</a></li>
+      </ul>
+    </nav>
   </footer>
 
   <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
   <script src="scripts/models/projects.js" charset="utf-8"></script>
+  <script src="scripts/controllers/project-controller.js" charset="utf-8"></script>
+  <script src="scripts/controllers/skills-controller.js" charset="utf-8"></script>
+  <script src="scripts/controllers/routes.js" charset="utf-8"></script>
+
 </body>
 
 </html>
