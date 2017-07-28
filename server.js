@@ -1,23 +1,23 @@
 'use strict';
 
-let express = require('express');
-const bodyParser = require('body-parser').urlencoded({
-  extended: true
-});
-let app = express();
+const express = require('express');
+const bodyParser = require('body-parser');
+const requestProxy = require('express-request-proxy');
 const PORT = process.env.PORT || 3000;
+const app = express();
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(express.static('./public'));
 
-// DONE: Include all of the static resources as an argument to app.use()
-app.use(express.static('./'));
+function proxyGitHub(request, response) {
+  console.log('Routing GitHub request for', request.params[0]);
+  (requestProxy({
+    url: `https://api.github.com/${request.params[0]}`,
+    headers: {Authorization: `token ${process.env.GITHUB_TOKEN}`}
+  }))(request, response);
+}
 
-app.get('', function(request, response) {
-  response.sendfile('index.html', {root: './'})
-});
-
-app.post('/articles', bodyParser, function(request, response) {
-  console.log(request.body);
-  response.send('Record posted to server!!');
-})
+app.get('/github/*', proxyGitHub);
 
 app.listen(PORT, function() {
   console.log(`'Listening on port: ${PORT}'`);
