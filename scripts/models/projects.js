@@ -1,7 +1,8 @@
 'use strict';
 
-(function(){
+(function(module) {
 
+  const projects = {};
   // LOAD AND RENDER
   const successCallback = function(data) {
     localStorage.setItem('key', JSON.stringify(data));
@@ -25,7 +26,7 @@
     }))
   }
 
-  function getProjects() {
+  projects.getProjects = () => {
     if (localStorage.length === 0) {
       $.getJSON('data/projects.json')
         .then(successCallback, errorCallback);
@@ -47,26 +48,8 @@
     let compHTML = template(context);
     $('#statData').html(compHTML);
   }
+  // $('#main').siblings().hide();
+  projects.getProjects();
+  module.projects = projects;
 
-  // NAV FUNCTIONALITY
-  function hideSections() {
-    $('#main').siblings().hide();
-  }
-
-  function navBar() {
-    $('nav').on('click', 'li', function() {
-      this.clicked;
-      if (this.clicked === true) {
-        $('#' + $(this).children('a').html()).fadeOut('slow');
-        this.clicked = false;
-      } else {
-        $('#' + $(this).children('a').html()).fadeIn('slow');
-        this.clicked = true;
-      }
-    });
-  }
-
-  getProjects();
-  hideSections();
-  navBar();
-})();
+})(window);
