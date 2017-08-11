@@ -1,43 +1,37 @@
 [{
-	"name": "Optimus Prime",
+	"name": "DevEstate",
 	"cat": "web",
-	"description": "An advanced cybernetic life-form that can turn into a truck.",
-	"numFiles": 101,
-	"image": "images/optimus.jpg",
-	"link": "https://en.wikipedia.org/wiki/Optimus_Prime"
+	"description": "A fancy homepage for developers.",
+	"image": "images/dev-estate.jpeg",
+	"link": "https://devestate.herokuapp.com/"
 }, {
-	"name": "Noah's Ark",
+	"name": "RePong",
 	"cat": "web",
-	"description": "A party boat for nature.",
-	"numFiles": 102,
-	"image": "images/ark.jpg",
-	"link": "https://en.wikipedia.org/wiki/Noahs_Ark"
+	"description": "An ever accelerating game of pong for 2.",
+	"image": "images/RePong",
+	"link": "http://repong.win/"
 }, {
-	"name": "Millenium Falcon",
+	"name": "BusMall",
 	"cat": "web",
-	"description": "A super fast spaceship thats ideal for smuggling.",
-	"numFiles": 103,
-	"image": "images/falcon.jpg",
-	"link": "https://en.wikipedia.org/wiki/Millenium_Falcon"
+	"description": "A product interest survey. Built to practice chartJS.",
+	"image": "images/bus-mall.jpeg",
+	"link": "https://thuglifeaquatic.github.io/bus-mall/"
 }, {
-	"name": "The Creation of T-Rex",
+	"name": "TurtleBird",
  	"cat": "art",
- 	"description": "And God said \"Let there be T-Rex\".",
-	"numFiles": 1,
-	"image": "https://ih0.redbubble.net/image.263673671.9704/flat,1000x1000,075,f.jpg",
- 	"link": "https://www.redbubble.com/people/adjusted"
+ 	"description": "A personal logo.",
+	"image": "images/TurtleBird_Logo.png",
+ 	"link": "https://github.com/ThugLifeAquatic"
  }, {
-	"name": "Secret Weapon",
+	"name": "DevEstate Icon",
  	"cat": "art",
- 	"description": "The Empire's new groove.",
-	"numFiles": 1,
-	"image": "https://ih1.redbubble.net/image.202307245.8949/flat,1000x1000,075,f.jpg",
- 	"link": "https://www.redbubble.com/people/adjusted"
+ 	"description": "A custom icon.",
+	"image": "images/devastate-icon.png",
+ 	"link": "https://devestate.herokuapp.com/"
  }, {
 	"name": "The Amazing Spideraptor",
  	"cat": "art",
  	"description": "Your friendly neighborhood mash-up.",
-	"numFiles": 1,
 	"image": "https://ih0.redbubble.net/image.202305717.9965/flat,1000x1000,075,f.jpg",
  	"link": "https://www.redbubble.com/people/adjusted"
  }]

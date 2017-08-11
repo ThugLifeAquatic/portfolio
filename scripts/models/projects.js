@@ -17,7 +17,6 @@
     let template = Handlebars.compile($('#address-template').html())
     // TODO: Make data global
     let data = JSON.parse(localStorage.getItem('key'));
-    stats(data);
     $('#web').html(template({
       project: data.filter(ele => ele.cat === 'web')
     }))
@@ -35,20 +34,6 @@
     }
   }
 
-  function stats(arr) {
-    let allStats = [];
-    let totalFiles = arr.map(files => files.numFiles).reduce((sum, value) => sum + value);
-    allStats.push(arr.length, totalFiles / arr.length, totalFiles);
-    let template = Handlebars.compile($('#stats-template').html());
-    let context = {
-      'numProjects': allStats[0],
-      'avgFiles': allStats[1],
-      'allFiles': allStats[2]
-    }
-    let compHTML = template(context);
-    $('#statData').html(compHTML);
-  }
-  // $('#main').siblings().hide();
   projects.getProjects();
   module.projects = projects;
 
