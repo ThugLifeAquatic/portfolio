@@ -1,4 +1,18 @@
 [{
+	"name": "StickerFire",
+	"cat": "web",
+	"description": "A Kickstarter-like app for custom stickers.",
+	"image": "images/stickerfire.png",
+	"link": "https://stickerfire20171113054734.azurewebsites.net/"
+},
+	{
+	"name": "Alright Books",
+	"cat": "web",
+	"description": "Browse, Save, and Read. Powered by Google books API.",
+	"image": "images/alrightbooks.png",
+	"link": "https://alrightbooks.com/"
+},
+	{
 	"name": "DevEstate",
 	"cat": "web",
 	"description": "A fancy homepage for developers.",
