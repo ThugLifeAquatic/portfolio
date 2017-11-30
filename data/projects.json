@@ -12,25 +12,14 @@
 	"image": "images/alrightbooks.png",
 	"link": "https://alrightbooks.com/"
 },
-	{
-	"name": "DevEstate",
-	"cat": "web",
-	"description": "A fancy homepage for developers.",
-	"image": "images/dev-estate.jpeg",
-	"link": "https://devestate.herokuapp.com/"
-}, {
+ {
 	"name": "RePong",
 	"cat": "web",
 	"description": "An ever accelerating game of pong for 2.",
 	"image": "images/RePong",
 	"link": "http://repong.win/"
-}, {
-	"name": "BusMall",
-	"cat": "web",
-	"description": "A product interest survey. Built to practice chartJS.",
-	"image": "images/bus-mall.jpeg",
-	"link": "https://thuglifeaquatic.github.io/bus-mall/"
-}, {
+},
+	{
 	"name": "TurtleBird",
  	"cat": "art",
  	"description": "A personal logo.",
